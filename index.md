@@ -4,24 +4,27 @@ title: "Home"
 class: home
 ---
 
-# Hi, I'm Dominik Moritz
+# Hi, I'm Boyu LI
 
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I'm faculty at the [Human-Computer Interaction Institute](https://hcii.cmu.edu/) at [Carnegie Mellon University](https://www.cmu.edu/) and an ML researcher at [Apple](https://www.apple.com/) <i class="fab fa-apple"></i>. I design and build interactive systems for visualization and analysis. At CMU, I co-lead the [Data Interaction Group](https://dig.cmu.edu/).
+A undergraduate student majoring in automation at [Xi'an Jiaotong University(XJTU)](http://www.xjtu.edu.cn/) Since 2019.
+My field of interest are: 
 
-I received my PhD from the [Paul G. Allen School](https://www.cs.washington.edu/) at the [University of Washington](https://www.washington.edu/), where I worked with [Jeff Heer](https://homes.cs.washington.edu/~jheer/) and [Bill Howe](https://homes.cs.washington.edu/~billhowe/) in the [Interactive Data Lab](http://idl.cs.washington.edu/) and the [Database Group](https://db.cs.washington.edu/).
++ Augmented reality (AR) and Virtual Reality (VR)
+  
++ Deep leaning or computer Vision in Robotics
 
-My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata.github.io/draco/) at premier academic venues and are used by the [Python](https://altair-viz.github.io) and [JavaScript](https://vega.github.io/vega-lite/) data science communities.
+I'm currently competing in Robomaster and serving as the vision team leader for the university team. Now I am looking for an opportunity to directly entry  a PhD course. Details are in my [CV]({{ "/cv/" | relative_url }}).
 </div>
 
 <div class="me" markdown="1">
 <picture>
-  <source srcset='https://cdn.jsdelivr.net/gh/newsun-boki/img-folder@main/20211101/miku.3oozwgn6goo0.png' />
+  <source srcset='https://avatars.githubusercontent.com/u/58367685?s=400&u=e835e201f8f23d37a53b4f9b72d6af15f28a4c6d&v=4' />
   <img
-    src='/images/dominik_berlin.jpg'
-    alt='Dominik Moritz'>
+    src='[/images/dominik_berlin.jpg](https://avatars.githubusercontent.com/u/58367685?s=400&u=e835e201f8f23d37a53b4f9b72d6af15f28a4c6d&v=4)'
+    alt='Boyu Li'>
 </picture>
 
 {:.no-list}
@@ -31,7 +34,6 @@ My systems have [won](https://vega.github.io/vega-lite/) [awards](https://uwdata
 
 </div>
 
-During my first year at UW, I received support from the [Fulbright program](https://en.wikipedia.org/wiki/Fulbright_Program). In 2013, I received my B.S. from [Hasso Plattner Institute](https://hpi.de/). I am a scholar of the [German National Academic Foundation](http://www.studienstiftung.de/). I have worked with the [Open Knowledge Foundation](http://www.okfn.org), [Google Research](https://ai.google/research/), and [Microsoft Research](https://www.microsoft.com/en-us/research/group/vibe/). Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 ## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 
