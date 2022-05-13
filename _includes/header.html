@@ -1,7 +1,7 @@
 {% assign current = page.url | downcase | split: '/' %}
 <header class="page-header">
   <nav class="container">
-    <a class="site-title" href="{{ absolute_url }}/liboyu">{{ site.title }}</a>
+    <a class="site-title" href="{{ absolute_url }}/liboyu/">{{ site.title }}</a>
 
     <a href="{{ '/projects/' | relative_url }}" {% if current[1] == 'projects' %}aria-current="page" {% endif %}>Projects</a>
     <!-- <a href="{{ '/publications/' | relative_url }}" {% if current[1] == 'publications' %}aria-current="page"{% endif %}>Publications</a> -->
