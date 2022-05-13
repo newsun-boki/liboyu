@@ -33,7 +33,7 @@ I'm currently competing in Robomaster and serving as the vision team leader for 
 </div>
 
 </div>
-
+<!-- {% include iframe.html src="https://www.bilibili.com/video/BV1LV411r756" %} -->
 
 ## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 
@@ -50,7 +50,7 @@ I'm currently competing in Robomaster and serving as the vision team leader for 
   Show More Projects
 </a>
 
-## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
+<!-- ## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
 
 <div class="featured-publications">
   {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
@@ -102,4 +102,4 @@ I'm currently competing in Robomaster and serving as the vision team leader for 
 
 </div>
 
-</div>
+</div> -->
