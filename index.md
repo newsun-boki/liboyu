@@ -9,14 +9,14 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-A undergraduate student majoring in automation at [Xi'an Jiaotong University(XJTU)](http://www.xjtu.edu.cn/) Since 2019.
+A mphil student at HKUST(GZ) [CISLab](https://cislab.hkust-gz.edu.cn), at Computational Media and Art Thrust of Hong Kong University of Science and Technology (GuangZhou), supervised by Prof. Zeyu Wang. Before that, I obtained my bachelor’s degree in Automation from Xi’an Jiaotong University (XJTU) in 2023.
 My field of interest are: 
 
 + Augmented reality (AR) and Virtual Reality (VR)
   
 + Deep leaning or computer Vision in Robotics
 
-I'm currently competing in Robomaster and serving as the vision team leader for the university team. Now I am looking for an opportunity to directly entry  a PhD course. Details are in my [CV]({{ "/cv/" | relative_url }}).
+Details are in my [CV]({{ "/cv/" | relative_url }}).
 </div>
 
 <div class="me" markdown="1">
