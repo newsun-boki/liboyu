@@ -50,7 +50,7 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
   Show More Projects
 </a>
 
-<!-- ## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
+## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
 
 <div class="featured-publications">
   {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
@@ -102,4 +102,4 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 </div>
 
-</div> -->
+</div>
