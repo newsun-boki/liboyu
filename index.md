@@ -29,7 +29,6 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 {:.no-list}
 * <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-* NSH 2602B
 </div>
 
 </div>
