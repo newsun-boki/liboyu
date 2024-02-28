@@ -2,13 +2,12 @@
   video: https://www.bilibili.com/video/BV1V44y1W73m
   image: Robomaster-art2.png
   description: "Robomaster dynamic wallpaper design products by"
-  highlight: 1
+  highlight: 3
 
 - title: Chinese Ancient temple 
   video: https://www.bilibili.com/video/BV11U4y1m7h8/
   image: Ancient-temple.jpg
   description: "Chinese Ancient Temple made by Blender following the instruction of Leo Li"
-  highlight: 4
 
 - title: Robomaster Vision
   article: https://newsun-boki.github.io/categories/rm/
@@ -16,3 +15,9 @@
   video: https://www.bilibili.com/video/BV1J5411A7d8
   description: "Robomaster is an international robot competition organized by DJI, which needs to apply technologies such as intelligent control and machine vision."
   highlight: 2
+
+- title: AR Ricci Map
+  image: 2023_ARRicciMap.png
+  demo: https://library.hkust.edu.hk/china-in-maps/about-us
+  description: AR Ricci Map is an AR mobile app that blendes digital maps with a physcial map. It shows different versions of ancient maps and transforms 2D maps into 3D globes, which provides exhibition visitors a new and engaging way to understand these historical maps.
+  highlight: 1

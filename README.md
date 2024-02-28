@@ -11,6 +11,9 @@ Like my website? Go through the following three steps to create your own website
   ```
   bundle exec jekyll build
   bundle exec jekyll serve
+  git add .
+  git commit -m "1"
+  git push
   ```
 `gem install` or `bundle install` may be needed to install other dependencies.
 If running successfully, you can open localhost:4000 to visit the website.

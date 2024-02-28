@@ -16,9 +16,10 @@ nav {
   }
 
   a {
-    color: #333;
+    color: $grey-color-dark;
     padding: 12px 0.3em 0 0.3em;
     margin: 0 0.3em;
+    font-size: 1.1em;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
@@ -31,7 +32,7 @@ nav {
     &:last-child {
       padding-right: 0;
     }
-    &[aria-current] {
+    &.active {
       border-bottom-color: #333;
       opacity: 1;
     }
@@ -102,10 +103,10 @@ nav {
       margin-left: initial;
     }
 
-    .external {
-      flex: 0 1 100%;
-      justify-content: space-around;
-    }
+    // .external { // uncomment to place .external in a new line
+    //   flex: 0 1 100%;
+    //   justify-content: space-around;
+    // }
     .site-title {
       text-align: center;
     }
@@ -123,7 +124,7 @@ nav {
         background: lighten($brand-color, 55%);
       }
 
-      &[aria-current] {
+      &.active {
         border-color: transparent;
         background: lighten($brand-color, 50%);
         border-radius: 3px;

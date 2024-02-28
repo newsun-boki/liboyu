@@ -83,7 +83,7 @@
 
 #clear-filters {
   color: $grey-color-dark;
-  font-weight: 500;
+  font-weight: $bold-font-weight;
   cursor: pointer;
 
   &:hover {
@@ -106,6 +106,7 @@
 }
 
 .pubs {
+  padding: 3px;
   .pub-year {
     font-size: 1.3em;
     margin: 0.7em 0 0.5em 0;
@@ -113,7 +114,21 @@
     color: $grey-color;
   }
 
-  .publication,
+  h1, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .author_me {
+    font-weight: $base-font-weight;
+  }
+
+  .publication-content,
   .year {
     opacity: 1;
     max-height: 600px;
@@ -128,84 +143,176 @@
   }
 
   .publication {
-    margin-bottom: 2em;
+    margin-bottom: 5vh;
+    display: flex;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    line-height: 1.2;
+    .thumbnail {
+        position: relative;
+        min-width: 15vw;
+        overflow: hidden;
+        margin-right: 1.5vw;
+        margin-left: 0.5vw;
+        margin-top: auto;
+        margin-bottom:auto;
+        img {
+            width: 15vw;
+            min-width: 15vw;
+            border-radius: 5px;
+            background-color: white;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            vertical-align: middle;
+        }
 
-    h3 {
-      font-size: 1.2em;
-      margin: 0em;
-      font-weight: 500;
-
-      max-height: 600px;
-      overflow: hidden;
-
-      &.hidden {
-        max-height: 0;
-      }
+    }
+    .thumbnail:hover img, .thumbnail:focus img {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
-    .award-icon {
-      margin-right: 0.2em;
-      font-size: 1.2em;
+    .publication-content {
+      margin-bottom: 1em;
+      // display: block;
+      // text-align: justify;
 
-      &.fa-trophy {
-        color: $yellow-color;
-      }
+      h3 {
+        font-size: 1.2em;
+        margin: 0em;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        font-weight: 500;
 
-      &.fa-award {
-        color: firebrick;
-      }
-    }
+        max-height: 600px;
+        overflow: hidden;
 
-    .authors {
-      margin-bottom: 0.3em;
-      font-weight: 300;
-      a {
-        color: $text-color;
-      }
-    }
-
-    .venue,
-    .venue a {
-      color: $grey-color;
-    }
-
-    .awards {
-      margin-top: 0.1em;
-      font-weight: 500;
-      color: firebrick;
-    }
-
-    .tweet {
-      &:hover {
-        text-decoration: none;
-
-        .message {
-          text-decoration: underline;
+        &.hidden {
+          max-height: 0;
         }
       }
-      .message {
-        font-size: 0.9em;
-        font-style: italic;
-        color: $grey-color;
+
+      .award-icon {
+        margin-right: 0.2em;
+        font-size: 1.2em;
+
+        &.fa-trophy {
+          color: $yellow-color;
+        }
+
+        &.fa-award {
+          color: firebrick;
+        }
       }
-    }
 
-    p {
-      margin-bottom: 0;
-    }
+      .authors {
+        margin-bottom: 0.3em;
+        font-weight: 300;
+        a {
+          color: $text-color;
+        }
+      }
 
-    .extra-links {
-      margin-top: 0.5em;
-      font-weight: 300;
-      font-size: 0.9em;
+      .poster_note {
+        font-weight: 300;
+      }
 
-      a {
-        margin-right: 1em;
-        white-space: nowrap;
+      .venue {
+        font-weight: 300;
+        margin-bottom: 0.3em;
+      }
 
+      a.tip {
+        // border-bottom: 1px dashed;
+        text-decoration: none;
+        position: relative;
+        color: $grey-color;
+        & span {
+            visibility: hidden;
+            z-index: 999;
+            background: rgba(255, 255, 255, 1);
+            left: 30px;
+            margin: 10px;
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            font-size: 0.9em;
+            color: black;
+            top: 5px; //10px;
+            text-decoration: none;
+            border: #c0c0c0 0px dotted;
+            padding: 0;
+            border-radius: 5px;
+          }
+      }
+      a.tip:hover {
+          cursor: help;
+          color: black;
+          & span {
+            display: block;
+            visibility: visible;
+          }
+      }    
+
+      .awards {
+        margin-top: 0.1em;
+        font-weight: 500;
+        color: firebrick;
+      }
+
+      .tweet {
         &:hover {
           text-decoration: none;
-          border-bottom: 1px solid $link-color;
+
+          .message {
+            text-decoration: underline;
+          }
+        }
+        .message {
+          font-size: 0.9em;
+          font-style: italic;
+          color: $grey-color;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .extra-links {
+        margin-top: 0.5em;
+        font-weight: 300;
+        font-size: 0.9em;
+
+        a {
+          margin-right: 1em;
+          white-space: nowrap;
+
+          &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid $link-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .pubs{ // cannot delete, or original styles cannot be overwritten by the following styles.
+    .publication {
+      display: block;
+      padding: 1rem;
+      .thumbnail {
+        margin-bottom: 5px;
+        text-align: center;
+        img {
+            width: 100%;
         }
       }
     }

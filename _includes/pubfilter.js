@@ -1,4 +1,5 @@
 (function() {
+  // after adding thumbnail to publication.html, this .js cannot work.
   var pubElems = document.querySelectorAll(".publication");
   var yearElems = document.querySelectorAll(".year");
 
@@ -20,7 +21,7 @@
     item.element = element;
 
     item.authors = (item.authors || []).filter(function(d) {
-      return d !== "Dominik Moritz";
+      return d !== "Linping Yuan";
     });
 
     data.push(item);

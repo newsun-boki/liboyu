@@ -3,11 +3,6 @@
     margin-top: 0;
   }
 
-  h2 {
-    font-size: 1.5em;
-    border-bottom: none;
-  }
-
   .columns {
     display: flex;
     flex-direction: row;
@@ -15,14 +10,15 @@
     .intro {
       flex: 1;
       font-size: 1.1em;
+      text-align: justify;
     }
 
     .me {
       margin-left: $spacing-unit;
       margin-bottom: $spacing-unit;
 
-      font-size: 0.9em;
-      text-align: center;
+      font-size: 1.0em;
+      text-align: left;
 
       picture, img {
         width: 220px;
@@ -82,13 +78,13 @@
 
       .title {
         margin: 0 0 0.6em 0;
-        font-size: 1.3em;
-        font-weight: bold;
-        line-height: 1;
+        font-size: 1.2em;
+        font-weight: 500;
+        line-height: 1.2;
       }
 
       p {
-        font-size: 0.85em;
+        font-size: 0.95em;
         margin: 0.7em 0;
         line-height: 1.2;
       }
@@ -120,14 +116,24 @@
   }
 
   .featured-publications {
-    font-size: 0.95em;
+    font-size: 1em;
     margin-bottom: 1.5em;
 
     .publication {
-      margin-bottom: 0.7em;
+      margin-bottom: 2vh;
       display: block;
-      color: $text-color;
 
+      // color: $text-color;
+      .pub-title {
+        font-weight: 500;
+      }
+      a {
+        color: $text-color;
+      }
+
+      i {
+        font-size: 1em;
+      }
       &:hover {
         text-decoration: none;
       }
@@ -146,19 +152,15 @@
     }
   }
 
-  .news-travel {
-    display: flex;
-    flex-direction: row;
-
-    font-size: 0.9em;
-
-    & > div {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-  }
-
   .news {
+    .date {
+      white-space: nowrap;
+      color: $grey-color;
+      padding-right: 1em;
+      text-align: right;
+      vertical-align: top;
+    }
+
     ul {
       list-style: none;
       margin-left: 0;
@@ -166,24 +168,9 @@
       li {
         margin-bottom: 1em;
       }
-
-      time {
-        display: block;
-        color: $grey-color;
-        font-size: 0.8em;
-      }
     }
   }
 
-  .travel {
-    padding-left: $spacing-unit;
-
-    .date {
-      white-space: nowrap;
-      color: $grey-color;
-      padding-right: 1em;
-    }
-  }
 
   @include media-query($on-palm) {
     .columns {

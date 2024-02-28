@@ -32,7 +32,6 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 </div>
 
 </div>
-<!-- {% include iframe.html src="https://www.bilibili.com/video/BV1LV411r756" %} -->
 
 ## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 
@@ -49,18 +48,14 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
   Show More Projects
 </a>
 
-## Featured <a href="{{ "/publications/" | relative_url }}">Publications</a>
+## Featured Publications
 
-<div class="featured-publications">
+<!-- style 1: with border -->
+<div class="pubs">
   {% assign sorted_publications = site.publications | sort: 'year' | reverse %}
   {% for pub in sorted_publications %}
-    {% if pub.highlight %}
-      <a href="{{ pub.pdf }}" class="publication">
-        <strong>{{ pub.title }}</strong>
-        <span class="authors">{% for author in pub.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>.
-        <i>{% if pub.venue %}{{ pub.venue }}, {% endif %}{{ pub.year }}</i>.
-        {% for award in pub.awards %}<br/><span class="award"><i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</span>{% endfor %}
-      </a>
+    {% if pub.highlight%}
+      {% include publication.html pub=pub %}
     {% endif %}
   {% endfor %}
 </div>
@@ -72,18 +67,19 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 <div class="news-travel" markdown="1">
 
-<div class="news" markdown="1">
 ## Latest News
 
-<ul>
+<div class="news" markdown="1">
+<table>
+<tbody>
 {% for news in site.data.news limit:10 %}
-  {% include news.html news=news %}
+  {% include news.html travel=news %}
 {% endfor %}
-</ul>
-
+</tbody>
+</table>
 </div>
 
-<div class="travel" markdown="1">
+<!-- <div class="travel" markdown="1">
 ## Latest Travel
 
 <table>
@@ -97,8 +93,8 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
   {% include travel.html travel=travel %}
 {% endfor %}
 </tbody>
-</table>
+</table> -->
 
-</div>
+<!-- </div> -->
 
 </div>
