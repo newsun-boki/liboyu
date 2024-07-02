@@ -21,9 +21,9 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 <div class="me" markdown="1">
 <picture>
-  <source srcset='https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745.jpg?raw=true' />
+  <source srcset='https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745%20(1).jpg?raw=true' />
   <img
-    src='[/images/boyuli.jpg](https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745.jpg?raw=true)'
+    src='[/images/boyuli.jpg](https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745%20(1).jpg?raw=true'
     alt='Boyu Li'>
 </picture>
 
