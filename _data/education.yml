@@ -5,3 +5,11 @@
   description:
     - "Major in Automation"
     - "GPA:86.04/100 or 3.60/4.30"
+
+- university: Hong Kong University of Science and Technology (Guangzhou)
+  years: 2023-present
+  degree: Mphil
+  location: Guangdong, China
+  description:
+    - "Computational Media and Art"
+    - "Supervised by Zeyu Wang"

@@ -13,7 +13,7 @@ title: CV
 <div class="header-columns">
   <div>
     <p>
-      Undergraduate Student at XJTU<br/>
+     Mphil of HKUST(GZ)<br/>
     </p>
   </div>
   <div>
@@ -45,6 +45,74 @@ title: CV
 </article>
 {% endfor %}
 
+<h2>Publications <a href="{{ '/publications/' | absolute_url }}">[Interactive Version]</a></h2>
+
+{% assign sorted_pubs = site.publications | reverse %}
+
+<!-- {% assign types = "Conference|Journal|Book Chapter|Demo|Workshop|Thesis" | split: "|" %} -->
+{% assign types = "Conference|Journal" | split: "|" %}
+{% for type in types %}
+  {% assign counter = 1 %}
+  {% for pub in sorted_pubs %}
+    {% if pub.type[0] == type %}
+      {% assign counter = counter | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  <h3 class="pub-type">
+    {{ type }}
+  </h3>
+
+  {% for pub in sorted_pubs %}
+    {% if pub.type[0] == type %}
+      {% assign counter = counter | minus: 1 %}
+      <article class="pub">
+        <div class="ref-container">{{ type | slice: 0 }}{{ counter }}</div>
+        <strong class="fill">{% if pub.pdf %}<a href="{{ pub.pdf }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{%endif%}</strong>
+        <div>
+          {% for author in pub.authors %}{% include person person=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+          {% if pub.venue or pub.description %}<i>{% if pub.description %}{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}{% endif %}{{ pub.venue }}</i>{% if pub.venue %},{% endif %} {% endif %}{{ pub.year }}.
+
+          {% if pub.link or pub.pdf or pub.video or pub.blog or pub.slides or pub.doi %}
+            <div class="extra-links">
+            {% if pub.pdf %}
+              <a href="{{ pub.pdf }}">
+                <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
+              </a>
+            {% endif %}
+            {% if pub.link %}
+              <a href="{{ pub.link }}">
+                <i class="fas fa-link" aria-hidden="true"></i> Project
+              </a>
+            {% endif %}
+            {% if pub.blog %}
+              <a href="{{ pub.blog }}">
+                <i class="fas fa-newspaper" aria-hidden="true"></i> Article
+              </a>
+            {% endif %}
+            {% if pub.video %}
+              <a href="{{ pub.video }}">
+                <i class="fas fa-film" aria-hidden="true"></i> Video
+              </a>
+            {% endif %}
+            {% if pub.doi %}
+              <a target="_blank" href="https://doi.org/{{ pub.doi }}">
+                <i class="fas fa-book" aria-hidden="true"></i> DOI
+              </a>
+            {% elsif pub.arxiv %}
+              <a href="https://arxiv.org/abs/{{ pub.arxiv }}">
+                <i class="fas fa-archive" aria-hidden="true"></i> arXiv
+              </a>
+            {% endif %}
+            </div>
+          {% endif %}
+
+          {% for award in pub.awards %}<strong class="award"><i class="fas fa-{% if award == "Best Paper Award" %}trophy{% else %}award{% endif %}" aria-hidden="true"></i> {{ award }}</strong>{% endfor %}
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
 
 <h2>Awards</h2>
 

@@ -8,8 +8,8 @@ Like my website? Go through the following three steps to create your own website
 1. Clone this repository to your computer.
 2. Follow the [official instruction](https://jekyllrb.com/docs/installation/) to install Jekyll and its dependencies.
 3. Go to the root directory and run the code with the following command in the terminal.
-  ``undle exec jekyll build`
-  b
+  ```
+  bundle exec jekyll build
   bundle exec jekyll serve
   git add .
   git commit -m "1"

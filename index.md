@@ -23,7 +23,7 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 <picture>
   <source srcset='https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745%20(1).jpg?raw=true' />
   <img
-    src='[/images/boyuli.jpg](https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745%20(1).jpg?raw=true'
+    src='[/images/boyuli.jpg](https://github.com/newsun-boki/newsun-boki/blob/main/IMG_20240701_214745%20(1).jpg?raw=true)'
     alt='Boyu Li'>
 </picture>
 
