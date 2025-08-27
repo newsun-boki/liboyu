@@ -9,7 +9,8 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-A mphil student at HKUST(GZ) [CISLab](https://cislab.hkust-gz.edu.cn), at Computational Media and Art Thrust of Hong Kong University of Science and Technology (GuangZhou), supervised by Prof. Zeyu Wang. Before that, I obtained my bachelor’s degree in Automation from Xi’an Jiaotong University (XJTU) in 2023.
+I am a Ph.D. student in the Division of Arts and Machine Creativity at the Hong Kong University of Science and Technology, supervised by Prof. Hongbo Fu. Prior to this, I was a master student at CISLab
+in the Computational Media and Arts Thrust at HKUST (Guangzhou), where I worked under the supervision of Prof. Zeyu Wang. I obtained my bachelor’s degree in Automation from Xi’an Jiaotong University (XJTU) in 2023.
 My field of interest are: 
 
 + Augmented reality (AR) and Virtual Reality (VR)
