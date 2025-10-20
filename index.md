@@ -11,11 +11,9 @@ class: home
 <div class="intro" markdown="1">
 I am a Ph.D. student in the Division of Arts and Machine Creativity at the Hong Kong University of Science and Technology, supervised by Prof. Hongbo Fu, co-supervised by Prof. Zeyu Wang. Prior to this, I was a master student at CISLab
 in the Computational Media and Arts Thrust at HKUST (Guangzhou), where I worked under the supervision of Prof. Zeyu Wang, co-supervised by Prof. Huamin Qu. I obtained my bachelor’s degree in Automation from Xi’an Jiaotong University (XJTU) in 2023.
-My field of interest are: 
 
-+ Augmented reality (AR) and Virtual Reality (VR)
-  
-+ Deep leaning or computer Vision in Robotics
+My main research interests lie at the intersection of Computer Vision, Human–Computer Interaction (HCI), and Computer Graphics, focusing on creativity support tools powered by Generative AI and 3D interaction in AR/VR environments. I am particularly interested in animation creation and 3D authoring systems that enhance human creativity and expressiveness.
+My works have been published in top-tier HCI and graphics venues, including ACM UIST, IEEE VR, ACM CSCW, IEEE TVCG, and SIGGRAPH Asia. I also serve as a reviewer for major conferences such as CHI, IEEE VR, and CSCW, and as a Program Committee member for IUI.
 
 Details are in my [CV]({{ "/cv/" | relative_url }}).
 </div>
