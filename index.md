@@ -46,6 +46,9 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 </table>
 </div>
 
+
+
+
 ## Featured Publications
 
 <!-- style 1: with border -->
@@ -65,8 +68,6 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 <div class="news-travel" markdown="1">
 
-
-
 ## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 
 <div class="featured-projects">
@@ -81,6 +82,7 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
   <i class="fas fa-chevron-circle-right"></i>
   Show More Projects
 </a>
+
 <!-- <div class="travel" markdown="1">
 ## Latest Travel
 
