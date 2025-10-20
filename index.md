@@ -34,20 +34,17 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 </div>
 
-## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
+## Latest News
 
-<div class="featured-projects">
-  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
-  {% for project in sorted_projects %}
-    {% if project.highlight %}
-      {% include project.html project=project %}
-    {% endif %}
-  {% endfor %}
+<div class="news" markdown="1">
+<table>
+<tbody>
+{% for news in site.data.news limit:10 %}
+  {% include news.html travel=news %}
+{% endfor %}
+</tbody>
+</table>
 </div>
-<a href="{{ "/projects/" | relative_url }}" class="button">
-  <i class="fas fa-chevron-circle-right"></i>
-  Show More Projects
-</a>
 
 ## Featured Publications
 
@@ -68,18 +65,22 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 <div class="news-travel" markdown="1">
 
-## Latest News
 
-<div class="news" markdown="1">
-<table>
-<tbody>
-{% for news in site.data.news limit:10 %}
-  {% include news.html travel=news %}
-{% endfor %}
-</tbody>
-</table>
+
+## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
+
+<div class="featured-projects">
+  {% assign sorted_projects = site.data.projects | sort: 'highlight' %}
+  {% for project in sorted_projects %}
+    {% if project.highlight %}
+      {% include project.html project=project %}
+    {% endif %}
+  {% endfor %}
 </div>
-
+<a href="{{ "/projects/" | relative_url }}" class="button">
+  <i class="fas fa-chevron-circle-right"></i>
+  Show More Projects
+</a>
 <!-- <div class="travel" markdown="1">
 ## Latest Travel
 
