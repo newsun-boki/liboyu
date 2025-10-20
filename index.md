@@ -34,17 +34,7 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 </div>
 
-## Latest News
 
-<div class="news" markdown="1">
-<table>
-<tbody>
-{% for news in site.data.news limit:10 %}
-  {% include news.html travel=news %}
-{% endfor %}
-</tbody>
-</table>
-</div>
 
 
 
@@ -67,6 +57,19 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 </a>
 
 <div class="news-travel" markdown="1">
+
+
+## Latest News
+
+<div class="news" markdown="1">
+<table>
+<tbody>
+{% for news in site.data.news limit:10 %}
+  {% include news.html travel=news %}
+{% endfor %}
+</tbody>
+</table>
+</div>
 
 ## Featured <a href="{{ "/projects/" | relative_url }}">Projects</a>
 
