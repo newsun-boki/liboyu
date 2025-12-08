@@ -9,8 +9,8 @@ class: home
 <div class="columns" markdown="1">
 
 <div class="intro" markdown="1">
-I am a Ph.D. student in the Division of Arts and Machine Creativity at the Hong Kong University of Science and Technology, supervised by Prof. Hongbo Fu, co-supervised by Prof. Zeyu Wang. Prior to this, I was a master student at CISLab
-in the Computational Media and Arts Thrust at HKUST (Guangzhou), where I worked under the supervision of Prof. Zeyu Wang, co-supervised by Prof. Huamin Qu. I obtained my bachelor’s degree in Automation from Xi’an Jiaotong University (XJTU) in 2023.
+I am a Ph.D. student in the [Division of Arts and Machine Creativity](https://amc.hkust.edu.hk/) at [the Hong Kong University of Science and Technology](https://hkust.edu.hk/), supervised by [Prof. Hongbo Fu](https://hongbofu.people.ust.hk/), co-supervised by [Prof. Zeyu Wang](https://cislab.hkust-gz.edu.cn/members/zeyu-wang/). Prior to this, I was a master student at [CISLab](https://cislab.hkust-gz.edu.cn/)
+in the [Computational Media and Arts Thrust](http://cma.hkust-gz.edu.cn/) at HKUST (Guangzhou), where I worked under the supervision of [Prof. Zeyu Wang](https://cislab.hkust-gz.edu.cn/members/zeyu-wang/), co-supervised by [Prof. Huamin Qu](http://huamin.org/). I obtained my bachelor’s degree in Automation from [Xi’an Jiaotong University](https://www.xjtu.edu.cn/?mobile) in 2023.
 
 My main research interests lie at the intersection of Computer Vision, Human–Computer Interaction (HCI), and Computer Graphics, focusing on creativity support tools powered by Generative AI and 3D interaction in AR/VR environments. I am particularly interested in animation creation and 3D authoring systems that enhance human creativity and expressiveness.
 My works have been published in top-tier HCI and graphics venues, including ACM UIST, IEEE VR, ACM CSCW, IEEE TVCG, and SIGGRAPH Asia. I also serve as a reviewer for major conferences such as CHI, IEEE VR, and CSCW, and as a Program Committee member for IUI.
