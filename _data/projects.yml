@@ -25,9 +25,16 @@
   image: AMCCMA.jpg
   article: https://www.art-mate.net/doc/90829?name=%E5%85%B1%E6%81%AF%E4%BF%A1%E8%99%9F%EF%BC%9A%E7%BA%8F%E8%81%AF%E7%9A%84%E6%84%9F%E7%9F%A5%E8%88%87%E7%AE%97%E6%B3%95
   description: Our work Bridging Past and Present:Rejuvenating Cantonese Opera through Overlapping Immersive Experience in Virtual Reality, show in the exhibition:Symbiotic Signals:Entangled Perceptions and Algorithms
+  highlight: 4
 
 - title: HK AI Art Festival
   image: HKAIART.jpg
   article: https://www.news.cn/gangao/20251112/6ad2a8e50a4946ffb828100a855b205b/c.html
   description: Our work Bridging Past and Present:Rejuvenating Cantonese Opera through Overlapping Immersive Experience in Virtual Reality, show at Hong Kong AI Art Festival
-  highlight: 4
+  highlight: 3
+
+- title: VtuberX
+  image: HKUST_dream_builder.png
+  article: https://ec.hkust.edu.hk/events/hkust-dream-builder
+  description: Our Project VtuberX accepted in the HKUST Dream Builder 2026, obtained funding, coaching and training, mentorship, and an array of in-kind support for start-up.
+  highlight: 5
