@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 64" role="img" aria-labelledby="title desc">
+  <title id="title">Adobe logo</title>
+  <desc id="desc">A red Adobe mark with wordmark.</desc>
+  <path d="M18 11h35l20 42H51l-4.1-10.1H33.8L29.7 53H8.3L28.8 11h13.6L23.9 49h9l6.9-16.7h1.1L48 49h8.9L39 15H23.2z" fill="#e1251b"/>
+  <text x="96" y="41" fill="#262626" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Adobe</text>
+</svg>

@@ -1,3 +1,11 @@
+- message: I started my research internship at Adobe.
+  date: 2026-07-01
+  logo: adobe.svg
+  logo_alt: Adobe logo
+- message: I worked as a Research Intern at Vivo from February to May 2026.
+  date: 2026-02-01
+  logo: vivo.svg
+  logo_alt: Vivo logo
 - message: Our Project VtuberX has been selected for the HKUST Dream Builder 2026 program!
   date: 2026-01-23
 - message: Our paper SketchDynamics has been accepted by CHI 2026!

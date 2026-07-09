@@ -45,6 +45,91 @@
     }
   }
 
+  .experience-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin-bottom: $spacing-unit / 2;
+  }
+
+  .experience-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 14px;
+    align-items: start;
+    min-height: 118px;
+    padding: 18px;
+    border: 1px solid #e3e7ee;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #fff 0%, #fbfcff 100%);
+    box-shadow: 0 8px 24px rgba(17, 57, 112, 0.07);
+    overflow: hidden;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--experience-accent);
+    }
+
+    &:hover {
+      border-color: lighten($brand-color, 35%);
+      box-shadow: 0 12px 30px rgba(17, 57, 112, 0.11);
+      transform: translateY(-1px);
+    }
+  }
+
+  .experience-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 92px;
+    height: 54px;
+    border: 1px solid #edf0f4;
+    border-radius: 7px;
+    background: #fff;
+
+    img {
+      width: 72px;
+      max-height: 34px;
+      object-fit: contain;
+    }
+  }
+
+  .experience-detail {
+    min-width: 0;
+  }
+
+  .experience-company {
+    margin-top: 2px;
+    color: $dark-text-color;
+    font-size: 1.12em;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .experience-role {
+    margin-top: 4px;
+    color: $grey-color;
+    font-size: 0.96em;
+    line-height: 1.35;
+  }
+
+  .experience-period {
+    grid-column: 2;
+    align-self: end;
+    color: var(--experience-accent);
+    font-size: 0.92em;
+    font-weight: 500;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
   .featured-projects {
   font-size: 0.9em;
   display: grid;
@@ -148,12 +233,51 @@
   }
 
   .news {
+    table {
+      border-collapse: separate;
+      border-spacing: 0 8px;
+      margin-top: -8px;
+    }
+
     .date {
       white-space: nowrap;
       color: $grey-color;
       padding-right: 1em;
       text-align: right;
-      vertical-align: top;
+      vertical-align: middle;
+    }
+
+    .news-entry {
+      vertical-align: middle;
+    }
+
+    .has-news-logo .news-entry {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .news-logo {
+      display: inline-flex;
+      flex: 0 0 42px;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 30px;
+      border: 1px solid #e7ebf0;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(17, 57, 112, 0.06);
+
+      img {
+        width: 32px;
+        max-height: 18px;
+        object-fit: contain;
+      }
+    }
+
+    .news-message {
+      min-width: 0;
     }
 
     ul {
@@ -186,8 +310,50 @@
       background-color: lighten($brand-color, 57%);
     }
 
+    .experience-list {
+      grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+      grid-template-columns: 82px 1fr;
+      gap: 12px;
+      align-items: start;
+      min-height: auto;
+      padding: 16px;
+    }
+
+    .experience-logo {
+      width: 82px;
+      height: 48px;
+
+      img {
+        width: 64px;
+        max-height: 30px;
+      }
+    }
+
+    .experience-period {
+      grid-column: 2;
+      white-space: normal;
+    }
+
+    .news {
+      .date {
+        padding-right: 0.75em;
+      }
+
+      .has-news-logo .news-entry {
+        align-items: flex-start;
+      }
+
+      .news-logo {
+        margin-top: 2px;
+      }
+    }
+
     .featured-projects {
       flex-direction: column;
+      grid-template-columns: 1fr;
 
       .project {
         display: block;

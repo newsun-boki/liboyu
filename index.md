@@ -36,7 +36,6 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 
 
-
 ## Featured Publications
 
 <!-- style 1: with border -->
@@ -102,4 +101,12 @@ Details are in my [CV]({{ "/cv/" | relative_url }}).
 
 <!-- </div> -->
 
+</div>
+
+## Experience
+
+<div class="experience-list">
+  {% for experience in site.data.experience %}
+    {% include experience.html experience=experience %}
+  {% endfor %}
 </div>

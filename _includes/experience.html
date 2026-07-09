@@ -1,0 +1,12 @@
+<div class="experience-item" style="--experience-accent: {{ include.experience.accent | default: '#113970' }};">
+  <div class="experience-logo">
+    <img
+      src="{{ '/images/logos/' | append: include.experience.logo | relative_url }}"
+      alt="{{ include.experience.company }} logo">
+  </div>
+  <div class="experience-detail">
+    <div class="experience-company">{{ include.experience.company }}</div>
+    <div class="experience-role">{{ include.experience.role }}</div>
+  </div>
+  <div class="experience-period">{{ include.experience.period }}</div>
+</div>

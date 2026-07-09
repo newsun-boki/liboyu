@@ -1,0 +1,17 @@
+- company: HKUST
+  role: Visiting Student
+  period: May 2023 - Aug 2023
+  logo: hkust.svg
+  accent: "#003366"
+
+- company: Vivo
+  role: Research Intern
+  period: Feb 2026 - May 2026
+  logo: vivo.svg
+  accent: "#2b68c8"
+
+- company: Adobe
+  role: Research Intern
+  period: Jul 2026 - Oct 2026
+  logo: adobe.svg
+  accent: "#e1251b"

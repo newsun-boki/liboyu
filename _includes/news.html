@@ -1,8 +1,15 @@
-<tr>
+<tr class="{% if news.logo %}has-news-logo{% endif %}">
   <td class="date">
     <time datetime="{{ news.date }}">{{ news.date | date: "%b %Y" }}</time>
   </td>
-  <td>
-    {{ news.message | markdownify | remove: '<p>' | remove: '</p>' }}
+  <td class="news-entry">
+    {% if news.logo %}
+      <span class="news-logo">
+        <img
+          src="{{ '/images/logos/' | append: news.logo | relative_url }}"
+          alt="{{ news.logo_alt | default: 'News logo' }}">
+      </span>
+    {% endif %}
+    <span class="news-message">{{ news.message | markdownify | remove: '<p>' | remove: '</p>' }}</span>
   </td>
 </tr>
